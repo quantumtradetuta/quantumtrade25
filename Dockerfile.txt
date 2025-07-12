@@ -1,5 +1,6 @@
 FROM quantrocket/quantrocket:latest
 
-ENV QUANTROCKET_LICENSE="ur3024957-13bc71592397cca995d353bd" EXPOSE 8081
+ENV QUANTROCKET_LICENSE="ur3024957-13bc71592397cca995d353bd"
+EXPOSE 8081
 
 CMD ["quantrocket", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8081", "--allow-root"]
